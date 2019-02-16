@@ -1,0 +1,20 @@
+{
+  "name": "node-coffee-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate to get startet with node.js dev with coffeescript",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "coffee --compile --output lib/ src/",
+    "start": "npm run compile && npm run live",
+    "live": "(coffee --watch --compile --output lib/ src/ .&); nodemon lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "coffeescript": "^2.3.2",
+    "nodemon": "^1.18.9"
+  },
+  "compilerOptions": {}
+}
